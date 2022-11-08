@@ -93,9 +93,5 @@ Aside from inbox, outbox and the ability to send a new message, in the mail clie
 
 When logged in the administrator can approve user applications, as well as export the auction details in XML, JSON or CSV format following the ebay DTD template. Also, to populate the database and train the recommender algorithm, I used real data from the eBay website in XML format provided by [UCLA](http://web.cs.ucla.edu/classes/winter15/cs144/projects/index.html).
 
-## Built with
-- [Express](https://expressjs.com)
-- [Node.js](https://nodejs.org/en/)
-- [MySQL](https://www.mysql.com)
-- [Sequelize](https://sequelize.org)
-- [React](https://reactjs.org)
+## Tools
+The website was built using [Express](https://expressjs.com), [Node.js](https://nodejs.org/en/), [MySQL](https://www.mysql.com), [Sequelize](https://sequelize.org) and [React](https://reactjs.org).
