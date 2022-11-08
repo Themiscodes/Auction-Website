@@ -1,0 +1,88 @@
+.searchInputs {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  font-family: Futura, Avenir, Helvetica, sans-serif;
+  background-color: #5fdaf9;
+  border: 0;
+  border-radius: 12px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+
+}
+
+.search input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #92e7fd;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.searchResult {
+  font-family: Futura, Avenir, Helvetica, sans-serif;
+  margin-top: 5px;
+  width: 330px;
+  height: 245px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.searchResult::-webkit-scrollbar {
+  display: none;
+}
+
+.searchResult .searchItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.inorder {
+  font-family: Futura, Avenir, Helvetica, sans-serif;
+  font-size: 29px;
+  margin-top: 10px;
+  margin-left:20px;
+  color: #39d2f9;
+}
+
+.searchItem p {
+
+  text-decoration: none;
+}
+
+p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
