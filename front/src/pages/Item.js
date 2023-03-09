@@ -37,7 +37,7 @@ import AddPhotos from '../components/Photos/AddPhotos';
 import DeletePhoto from '../components/Photos/DeletePhoto';
 import Body from '../components/Typography/Body';
 import Detail from '../components/Typography/Detail';
-import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
+// import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 
 // Styles for the modals
 const style = {
@@ -1148,7 +1148,7 @@ function Item() {
                         <div> 
                         {/* To stop editing */}
                         {
-                            <button className='buttonito' onClick={stopEditor} > Stop Edit </button>
+                            <button className='buttonito' onClick={stopEditor} > Done </button>
                         }
                         </div>
                         :
@@ -1178,7 +1178,7 @@ function Item() {
 
                         <br />
                             <br />
-                            <div style={{ marginLeft: 216 }}>
+                            {/* <div style={{ marginLeft: 216 }}>
                             <AssuredWorkloadIcon sx={{ fontSize: 100 , color: '#00C9FF' }}  /> 
                             </div>
                             <Typography sx={{fontFamily: 'Futura', width: '100%'}} variant="h7" component="h2">Shop With Confidence</Typography>
@@ -1194,7 +1194,7 @@ function Item() {
                             <Typography sx={{fontFamily: 'Futura', width: '100%'}} variant="h6" component="h2">• The payment has to be confirmed within a week </Typography>
                             <Typography sx={{fontFamily: 'Futura', width: '100%'}} variant="h6" component="h2">• Please allow additional time for international delivery</Typography>
                             <Typography sx={{fontFamily: 'Futura', width: '100%'}} variant="h6" component="h2">• Be aware of shipments from abroad subject to customs</Typography>
-                            <br />     
+                            <br />      */}
 
 
                         </div>

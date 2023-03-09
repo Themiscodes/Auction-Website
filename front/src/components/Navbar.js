@@ -52,11 +52,11 @@ function Navbar(props) {
               :
               <Link style={{ color: 'white' }} to="/auctions">Auctions</Link>
             }
-          {props.clicked==="search" ?
+          {/* {props.clicked==="search" ?
               <Link style={{ color: 'rgba(0, 0, 0, 0.36)' }} to="/search">Search&nbsp;&nbsp;&nbsp;</Link>
               :
               <Link style={{ color: 'white' }} to="/search">Search&nbsp;&nbsp;&nbsp;</Link>
-            }
+            } */}
         </>)
         :
           (<>
@@ -110,11 +110,11 @@ function Navbar(props) {
               :
               <Link style={{ color: 'white' }} to="/addcategory">Categories</Link>
             }
-            {props.clicked==="export" ?
+            {/* {props.clicked==="export" ?
               <Link style={{ color: 'rgba(0, 0, 0, 0.36)' }} to="/export">Export</Link>
               :
               <Link style={{ color: 'white' }} to="/export">Export</Link>
-            }
+            } */}
             </>)
           }
           
@@ -123,11 +123,11 @@ function Navbar(props) {
               :
               <Link style={{ color: 'white' }} to="/auctions">Auctions</Link>
             }
-          {props.clicked==="search" ?
+          {/* {props.clicked==="search" ?
               <Link style={{ color: 'rgba(0, 0, 0, 0.36)' }} to="/search">Search&nbsp;&nbsp;&nbsp;</Link>
               :
               <Link style={{ color: 'white' }} to="/search">Search&nbsp;&nbsp;&nbsp;</Link>
-            }
+            } */}
           <div className ="loggedInContainer"> 
               
             <div className ="h1" style={{ color: 'white' }}>&nbsp;Signed in as {authState.username} </div>

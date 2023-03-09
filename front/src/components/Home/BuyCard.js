@@ -21,7 +21,7 @@ export default function BuyCard(props) {
             variant="h5"
             component="h1"
             style= {{fontFamily: 'Futura', fontWeight: 'bold',
-            fontSize: '2rem', color: '#fff',}}
+            fontSize: '2rem', color: 'black',textAlign:'center'}}
           >
             {props.kind.title}
           </Typography>
@@ -29,9 +29,10 @@ export default function BuyCard(props) {
             variant="body2"
             color="textSecondary"
             component="p"
-            style={{ fontFamily: 'Futura',
+            style={{ fontFamily: 'sans-serif',
             fontSize: '1.1rem',
-            color: '#ddd', }}
+            color: 'black',textAlign:'center'
+             }}
           >
             {props.kind.description}
           </Typography>

@@ -22,6 +22,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 // The style for the modals
 const style = {
+  
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -164,7 +165,7 @@ function Users() {
         <Title title="Users" />
       </div>
       <div className="container">
-        <Header text="Click on a user profile for more details" />
+        <Header text="Click on a user for details" />
       </div>
 
       <div className="container">
@@ -220,7 +221,7 @@ function Users() {
         {/* Message alert */}
         <Snackbar open={openAlert} autoHideDuration={6000} onClose={handleCloseAlertR}>
           <Alert onClose={handleCloseAlertR} severity="success" sx={{ width: '100%' }}>
-            Users succesfully approved!
+            Users approved
           </Alert>
         </Snackbar>
 

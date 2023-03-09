@@ -316,9 +316,9 @@ function Profile() {
         >
         <Box sx={style}>
         <Typography id="modal-modal-title" variant="h5" component="h2">
-        Are you sure you want to approve {userInfo.username}?
+    Approve {userInfo.username}?
         </Typography>
-        <HeaderNormal text="You can't reverse this action" />
+        {/* <HeaderNormal text="You can't reverse this action" /> */}
         <button className="buttonitoReverse" onClick={handleClose}>Cancel</button>
         <button className="buttonito"  onClick={handleApprove} autoFocus>Confirm</button>
         </Box>

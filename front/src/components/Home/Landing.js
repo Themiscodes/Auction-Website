@@ -24,14 +24,14 @@ const kind = [
   {
     title: 'Sell',
     description:
-      "Selling with us is rather easy. You have absolute control over the price, duration of the auction and availability for immediate purchase. All you have to do is create an account and when you are confirmed you are ready to post your first listing!",
+      "Create an Account first to Sell Items.",
     imageUrl: "https://localhost:33123/images/kobuR.jpg",
     time: 1500,
   },
   {
     title: 'Buy',
     description:
-      'In our auctions, items are bid on and sold to the highest bidder on a public sale. We ensure a safe transaction between seller and buyer and you can communicate securely within our mail app. Feel free to explore our catalogue before joining here!',
+      'Items are put on bid and sold to the highest bidder on a public sale.',
     imageUrl: "https://localhost:33123/images/saadR.jpg",
     time: 1500,
   },
@@ -39,9 +39,7 @@ const kind = [
 
   return (
     <div  style={{     minHeight: '100vh', width: '100%',
-      backgroundImage: `url("https://localhost:33123/images/products.jpg")`,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover', }}>
+}}>
       
       <CssBaseline />
       <motion.div style={{display: 'flex',
@@ -57,11 +55,11 @@ const kind = [
       <AppBar style={{background: 'none', }} elevation={0}>
         <Toolbar style={{width: '80%',
     margin: '0 auto', }}>
-          <h1 style={{    flexGrow: '1', fontSize: '2.6rem', color: '#fff', }}  >
-          auctionpoint
+          <h1 style={{    flexGrow: '1', fontSize: '2.6rem', color: "black", }}  >
+          Ebysel_
           </h1>
           <IconButton onClick={goToLogin}>
-            <ExitToAppIcon style={{    color: '#fff',
+            <ExitToAppIcon style={{    color:"black",
     fontSize: '2rem', }} />
           </IconButton>
         </Toolbar>
@@ -69,18 +67,18 @@ const kind = [
 
             <div style={{     textAlign: 'center',}} >
               <h1 style={{    flexGrow: '1', fontSize: '4.5rem',
-        background: "-webkit-linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%)",
+        background: "-webkit-linear-gradient(45deg, #000000 0%, #fe92b8 100%)",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent" }}  > 
         <div style={{     color: '#fff',
         fontSize: '4.5rem', }}>
-            Welcome to <br />
+            Welcome to<br />
             </div>
-          auction point </h1>
+          E-bysel_ </h1>
           
           <Scroll to="DOWN" smooth={true}>
             <IconButton>
-              <ExpandMoreIcon style={{     color: '#b5efff', fontSize: '4rem', }} />
+              <ExpandMoreIcon style={{     color: "black", fontSize: '4rem', }} />
             </IconButton>
           </Scroll>
 

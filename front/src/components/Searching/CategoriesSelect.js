@@ -35,9 +35,9 @@ export default function CategoriesSelect(props) {
           height: 45,
           p: 1,
           m: 1,
-          color: '#00C9FF',
+          color: '#50194d',
           '&:hover': {
-            backgroundColor: '#00C9FF',
+            backgroundColor: '#50194d',
             color: 'white',
           },
           bgcolor: (theme) =>

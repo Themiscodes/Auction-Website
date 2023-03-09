@@ -227,7 +227,7 @@ function Dashboard() {
 
                     { myPastItems.length!==0 ? 
                         <div className='container'>
-                            <Header text="Go through the history of your listings" />
+                            {/* <Header text="Go through the history of your listings" /> */}
                         </div>
                     :
                         <div className='container'>

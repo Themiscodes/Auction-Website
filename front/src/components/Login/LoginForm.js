@@ -126,7 +126,7 @@ function LoginForm() {
                     id="inputCreateItem" 
                     name="password" 
                     type="password"
-                    placeholder="*****" 
+                    
                     />
                 
                     <button type="submit" >
@@ -144,11 +144,11 @@ function LoginForm() {
         >
             <Box sx={style}>
             <Typography id="modal-modal-title" variant="h5" component="h2">
-                Your Application is Pending Approval
+            Approval Pending
             </Typography>
-            <img alt="Approval" className='approval_photo' src='https://codenex.in/wp-content/uploads/2019/01/appdevelopment.png' />
+            {/* <img alt="Approval" className='approval_photo' src='https://codenex.in/wp-content/uploads/2019/01/appdevelopment.png' /> */}
             <Typography variant="h6" id="modal-modal-description" sx={{ mt: 2 }}>
-                You will be able to sign in and use our services, as soon as your profile has been seen and approved by the administrator!
+                You will be able to sign in as the admin will approve.
             </Typography>
             </Box>
         </Modal>

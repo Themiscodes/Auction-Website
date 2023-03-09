@@ -40,7 +40,7 @@ function CreateItem() {
         currently: "",
         location: "",
         number_of_bids: 0,
-        country: "Greece",
+        country: "India",
         started: today,
         date: new Date(),
         furthermostCategoryId: 0,

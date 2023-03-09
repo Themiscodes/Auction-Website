@@ -78,9 +78,7 @@ function CreateCategory() {
   return (
 
     <div style={{ minHeight: '90vh', width: '100%', 
-                  backgroundImage: `url("https://localhost:33123/images/background.png")`,
-                  backgroundRepeat: 'repeat',
-                }}>
+  }}>
       <div className='createItemPage'>
 
         <div className='formContainer gradient-custom' >
@@ -106,8 +104,7 @@ function CreateCategory() {
             </Grid>
 
             <Grid item>
-              <Detail text="Select the place of this category on the hierarchy:" />
-              <br />
+              
               <Detail text={<div> 
               <Categories setSelectedCategory={setSelectedCategory} />
               </div>} />

@@ -4,18 +4,18 @@ import * as Yup from 'yup';
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import {CountryDropdown} from 'react-country-region-selector';
-import ConvertDMS from '../Maps/ConvertDMS';
+// import ConvertDMS from '../Maps/ConvertDMS';
 
 // For the material modal
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import CreateCoordinates from '../Maps/CreateCoordinates';
+// import CreateCoordinates from '../Maps/CreateCoordinates';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
+// import DialogContentText from '@mui/material/DialogContentText';
+// import DialogTitle from '@mui/material/DialogTitle';
 
 const style = {
   position: 'absolute',
@@ -44,8 +44,8 @@ function Registration() {
         email: "",
         telephone: "",
         location: "",
-        country: "Greece",
-        taxnumber: "",
+        country: "India",
+        // taxnumber: "",
     };
 
     // REGEX for the telephone validation
@@ -82,7 +82,7 @@ function Registration() {
         longitude: Yup.number("This is a number").moreThan(-180).lessThan(180),
         location: Yup.string().min(3).max(155).required("You must input a location."),
         country: Yup.string().required("You must input your country."),
-        taxnumber: Yup.number().required("You must input your tax number.").positive().integer().lessThan(1000000000, "This is not valid").moreThan(99999999, "This is not valid"),
+        // taxnumber: Yup.number().required("You must input your tax number.").positive().integer().lessThan(1000000000, "This is not valid").moreThan(99999999, "This is not valid"),
     });
 
     const onSubmit = (data) =>{
@@ -149,7 +149,6 @@ function Registration() {
                 id="inputCreateItem" 
                 name="password" 
                 type="password"
-                placeholder="*****" 
                 />
                 <label>Confirm Password: </label>
                 <ErrorMessage name="confirmPassword" component="span" />
@@ -157,7 +156,7 @@ function Registration() {
                 id="inputCreateItem" 
                 name="confirmPassword" 
                 type="password"
-                placeholder="*****" 
+ 
                 />
                 <label>Name: </label>
                 <ErrorMessage name="name" component="span" />
@@ -187,14 +186,14 @@ function Registration() {
                 name="telephone" 
                 placeholder="Telephone" 
                 />
-                
+{/*                 
                 <label>ΑΦΜ: </label>
                 <ErrorMessage name="taxnumber" component="span" />
                 <Field 
                 id="inputCreateItem" 
                 name="taxnumber" 
                 placeholder="Taxnumber" 
-                />
+                /> */}
 
                 <label>Location: </label>
                 <ErrorMessage name="location" component="span" />
@@ -226,21 +225,21 @@ function Registration() {
             aria-labelledby="alert-dialog-title"
             aria-describedby="alert-dialog-description"
         >
-            <DialogTitle id="alert-dialog-title" style={{
+            {/* <DialogTitle id="alert-dialog-title" style={{
                 fontFamily: 'Futura',
                 
             }}>
-            {"Optionally, you can also provide your precise location"}
-            </DialogTitle>
+            {"Click continue"}
+            </DialogTitle> */}
             <DialogContent>
-            <DialogContentText id="alert-dialog-description">
+            {/* <DialogContentText id="alert-dialog-description">
                 <CreateCoordinates setCoordinates={setCoordinates} />
                 { (Object.keys(coordinates).length > 0 ) &&
                     <Typography variant="h6" id="modal-modal-description" sx={{ mt: 2 }}>
                     Set to:&nbsp;&nbsp;{ConvertDMS(coordinates.lat, coordinates.lng)}
                   </Typography>
                 }
-            </DialogContentText>
+            </DialogContentText> */}
             </DialogContent>
             <DialogActions>
 
@@ -258,12 +257,12 @@ function Registration() {
         >
             <Box sx={style}>
                 <Typography id="modal-modal-title" variant="h5" component="h2">
-                    Application Received
+                    Application Received By Admin
                 </Typography>
-                <img alt="Received" className='approval_photo' src='https://codenex.in/wp-content/uploads/2019/01/appdevelopment.png' />
-                <Typography variant="h6" id="modal-modal-description" sx={{ mt: 2 }}>
-                    You'll be able to use our services as soon as you have been approved!
-                </Typography>
+                {/* <img alt="Received" className='approval_photo' src='https://codenex.in/wp-content/uploads/2019/01/appdevelopment.png' /> */}
+                {/* <Typography variant="h6" id="modal-modal-description" sx={{ mt: 2 }}>
+                    
+                </Typography> */}
             </Box>
         </Modal>
 
