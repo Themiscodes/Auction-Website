@@ -47,7 +47,7 @@ function Logout() {
           {"Are you sure you want to sign out?"}
         </DialogTitle>
         <DialogActions>
-            <button className="buttonitoReverse" onClick={handleClose}>Cancel</button>
+            <button className="buttonitoReverse" onClick={handleClose}>Cancel123</button>
             <button className="buttonito"  onClick={logout} autoFocus>Confirm</button>
         </DialogActions>
       </Dialog>
